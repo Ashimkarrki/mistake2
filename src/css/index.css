@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.small_box {
+  width: 250px;
+  background-color: grey;
+  margin: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.small_box img {
+  max-width: 100%;
+}
+.big_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+}
+.small_box_over {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  transform: translateY(222px);
+  transition: transform 0.2s ease-in-out;
+  font-weight: 900;
+  font-size: medium;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.small_box:hover .small_box_over {
+  transform: translateY(0px);
+}
+
+.smalll_box_over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: gold;
+  transform: translateX(-322px);
+  transition: transform 0.2s ease-in-out;
+  width: 30%;
+  height: 20%;
+  border-radius: 0 0 25px 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.small_box:hover .smalll_box_over {
+  transform: translateX(0px);
+}
+.movie_info_box {
+  text-align: center;
+  background-color: #1d1d1d;
+}
+
+.line {
+  max-width: 100px;
+  margin: 2rem auto;
+  background-color: red;
+  height: 5px;
+}
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classes {
+  display: flex;
+}
+.classes img {
+  max-width: 800px;
+  margin: 1%;
+}
+.info {
+  text-align: left;
+  margin: 1%;
+  padding: 2%;
+  color: rgb(255, 255, 255);
+}
+.info p {
+  margin: 2%;
+}
+.info span {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-right: 1%;
+}
+h3 {
+  margin: 2%;
+  display: inline-block;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.movie_info_box h4 {
+  color: white;
+  margin: 3%;
+  display: inline-block;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  margin: 2%;
+  padding: 1% 4%;
+}
+.cast img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.cast h5 {
+  color: aliceblue;
+}
+#outlined-basic {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.signin_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+  text-align: center;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.box_items {
+  margin: 2%;
+}
+label {
+  margin: 2%;
+  font-size: medium;
+}
+.submit {
+  padding: 5%;
+  cursor: pointer;
+  background-color: rgb(176, 176, 230);
+  border: none;
+}
+.submit:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+.displaynone {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: end;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.link {
+  color: rgb(122, 4, 4);
+  font-weight: 900;
+  margin: 0% 1%;
+}
+
+.bannerbar {
+  background-attachment: fixed;
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  text-align: start;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2%;
+}
+.hero-text h1 {
+  font-size: 5vw;
+  color: transparent;
+  /* -webkit-text-stroke: 0.05vw white; */
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+.hero-text h1::before {
+  content: "MOVIE+REVIEW...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: fit-content;
+  color: white;
+  /* -webkit-text-stroke: 0vw transparent; */
+  border-right: 1px solid white;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.btn {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 1%;
+  cursor: pointer;
+  border: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+}
+.list {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.list a {
+  color: white;
+  margin: 4%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
